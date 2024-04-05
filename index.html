@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tricolor paulista</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tricolor Paulista</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!--posso escluir depois-->
+    <title>Manipulação do DOM</title>
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+          count++;
+          document.getElementById("count-display").textContent = count;
+        }        
+
+    </script>
+<!--posso escluir depois-->
 <body>
 
   
-  <script src="javascript.js"></script>
+  <script src="javascrip-t.js"></script>
     <header>
         <nav>
             
@@ -22,35 +34,22 @@
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <head>
-            <style>
-                .texto-no-canto {
-                    position: absolute;
-                    top: 15%;
-                    left: 15%;
-                    transform: translate(-5%, -5%);
-                    font-family: "Arial", sans-serif; /* Especifica a fonte */
-                    font-weight: bold; /* Deixa o texto em negrito */
-                    font-size: 60px; /* Tamanho da fonte */
-                    color: red; /* Altera a cor do texto para vermelho */
-                    text-shadow: 
-            -1px -1px 0 #ffffff,  
-            1px -1px 0 #ffffff,  
-            -1px 1px 0 #ffffff,  
-            1px 1px 0 #ffffff; /* Contorno ao redor das letras */
-                }
-            </style>
-            </head>
-            
+        <section id="hero">  
             <div class="texto-no-canto">
-              O site que conta a história do tricolor paulista!
+              O site dedicado ao São Paulo Futebol Clube!
             </div>
         </section>
         <section id="features">
-            <h2>O melhor site de informações do tricolor paulista</h2>
+            <div class="containerlm">
+                <h3>Seja bem-vindo ao melhor site dedicado ao São Paulo Futebol Clube! Aqui você encontrará tudo sobre a história, a torcida apaixonada, os títulos conquistados, os ídolos do passado e do presente, os maiores artilheiros e os talentos revelados em Cotia. Explore nossas páginas e mergulhe no universo do Tricolor Paulista.</h3>
+            </div>
         </section>
     </main>
+    <!--posso escluir depois-->
+    <h1>Manipulação do DOM</h1>
+    <button onclick="incrementCount()">Clique Aqui</button>
+    <p>Total de Cliques: <span id="count-display">0</span></p>
+<!--posso escluir depois-->
     <footer>
         <p>&copy; 2024 Site do São Paulo Futebol Clube. Todos os direitos reservados.</p>
     </footer>
